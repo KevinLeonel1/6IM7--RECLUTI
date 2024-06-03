@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketsale</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-icon" onclick="toggleSidebar()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <a href="index.html" class="logo">TICKETSALE</a>
+            <input type="text" placeholder="Search...">
+        </header>
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <h3>Apartados</h3>
+                <button onclick="location.href='GestionEventos.html'">Gestion Eventos</button>
+                <button onclick="location.href='pop.html'">Pop</button>
+                <button onclick="location.href='rock.html'">Rock</button>
+                <button onclick="location.href='jazz.html'">Jazz</button>
+                <button onclick="location.href='musica_latinoamericana.html'">Música Latinoamericana</button>
+                <button onclick="location.href='electronica.html'">Electrónica</button>
+                <button onclick="location.href='variedades.html'">Variedades</button>
+                <button onclick="location.href='boletos_reservar.html'">Boletos Reservar</button>
+            </nav>
+        </aside>
+        <main>
+            <h2>Eventos Recientes</h2>
+            <div class="events">
+                <button onclick="location.href='hera.html'" class="event">
+                    <img src="fercho.jpeg" alt="Festival Hera HSBC">
+                    <p>Festival Hera HSBC</p>
+                </button>
+                <button onclick="location.href='juevess2x1.html'" class="event">
+                    <img src="pollin.png" alt="Jueves 2x1">
+                    <p>Jueves 2x1</p>
+                </button>
+                <button onclick="location.href='ccxp.html'" class="event">
+                    <img src="pepe.jpeg" alt="CCXP">
+                    <p>CCXP</p>
+                </button>
+                <button onclick="location.href='shenyun.html'" class="event">
+                    <img src="insnos.png" alt="Shen Yun">
+                    <p>Shen Yun</p>
+                </button>
+            </div>
+            <button class="load-more">Ver más</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
