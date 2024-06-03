@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar Datos</title>
+    <title>Evento</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,40 +44,37 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: white;
         }
         .main-content h1 {
             color: #333;
             font-size: 36px;
             margin-bottom: 20px;
         }
-        .form-container {
+        .event-container {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            width: 80%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 60%;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .form-container:hover {
+        .event-container:hover {
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
-        .form-container label {
-            font-size: 18px;
+        .event-container h2 {
             color: #333;
-            margin-bottom: 10px;
-        }
-        .form-container input[type="text"] {
-            width: 100%;
-            padding: 10px;
+            font-size: 28px;
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
         }
-        .form-container .qr-button {
-            background-color: #000046;
+        .event-container p {
+            font-size: 18px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .event-container button {
+            background-color: #007BFF;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -85,17 +82,10 @@
             cursor: pointer;
             transition: background 0.3s;
             font-size: 18px;
-        }
-        .form-container .qr-button:hover {
-            background-color: #1CB5E0;
-        }
-        .form-container .qr-code {
             margin-top: 20px;
-            text-align: center;
         }
-        .form-container .qr-code img {
-            width: 150px;
-            height: 150px;
+        .event-container button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -116,15 +106,12 @@
             </nav>
         </div>
         <div class="main-content">
-            <h1>Ingresa tus datos</h1>
-            <div class="form-container">
-                <label>Fan-ID: ____________</label><br>
-                <label>Tarjeta con la que se realizó la compra: ________</label><br>
-                <label>Firma digital: ________</label><br>
-                <label>Número de compra: ________</label><br>
-                <label>Asientos: ________</label><br><br>
-                <button class="qr-button">Genera tu código QR</button>
-                
+            <div class="event-container">
+                <h2>Título del Evento</h2>
+                <p>Fecha: 25 de junio de 2024</p>
+                <p>Hora: 19:00</p>
+                <p>Lugar: Auditorio Principal</p>
+                <button>Regístrate Ahora</button>
             </div>
         </div>
     </div>
